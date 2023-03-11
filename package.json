@@ -1,0 +1,32 @@
+{
+  "name": "blogging-website",
+  "version": "1.0.0",
+  "description": "To post article,nwesletter,view options.,etc",
+  "main": "yes",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manik1843/Mean_Project_Phase1_Manikandan-Natarajan.git"
+  },
+  "keywords": [
+    "Article",
+    "Page",
+    "Newsletter"
+  ],
+  "author": "Manikandan Natarajan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manik1843/Mean_Project_Phase1_Manikandan-Natarajan/issues"
+  },
+  "homepage": "https://github.com/Manik1843/Mean_Project_Phase1_Manikandan-Natarajan#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "express-fileupload": "^1.4.0",
+    "express.js": "^1.0.0",
+    "jquery": "^3.6.3",
+    "nodemon": "^2.0.21",
+    "popper.js": "^1.16.1"
+  }
+}

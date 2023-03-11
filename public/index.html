@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/style.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="/umd/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    -->
+    <link id="dark-theme-style" rel="stylesheet" />
+    <title>Blogging - Website!!</title>
+  </head>
+  <body>
+    <!--Header starts-->
+    <header class="main_header">
+        <div class="d-flex justify-content-center align-items-center flex-column py-5">
+            <h1 class="text-uppercase main_heading">Mani's Blog!!</h1>
+            <p class="main_heading__para">Welcome to my <span class="text-capitalize bg-dark text-white py-2 px-3"> world of blog to post/view articles,newsletter.etc</span> </p>
+        </div>
+        <!--Nav Bar starts-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <!--<li class="nav-item">
+                    <a class="nav-link" href="about_us.html">About Us</a>
+                  </li>-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="add_blog.html">Add Blog</a>
+                  </li>            
+                </ul>
+                <div class="navbar-nav ms-auto">   
+                    <!-- 🚨 Notice the toggleTheme() function -->
+                    <a
+                    href="javascript:void()"
+                    class="btn btn-outline-info btn-lg ml-auto font-weight-bold"
+                    id="theme-toggler"
+                    onclick="toggleTheme()"
+                    ></a>           
+                    <form>
+                        <div class="input-group">                    
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
+                        </div>
+                    </form>                
+                    <a style="cursor:pointer;" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+                </div>
+              </div>
+            </div>
+        </nav> 
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row g-3">
+                    <div class="col-auto">
+                      <label for="staticEmail2" class="visually-hidden">Email</label>
+                      <input type="text" class="form-control" id="staticEmail2" placeholder="email@example.com">
+                    </div>
+                    <div class="col-auto">
+                      <label for="inputPassword2" class="visually-hidden">Password</label>
+                      <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 
+                </div>
+              </div>
+            </div>
+          </div> 
+        <!--Nav Bar Ends-->
+        <!--Carousel Slider start-->
+        <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/Blog_Image_1.jpg" class="d-block w-100" style="height:300px">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Blog_Image_2.jpg" class="d-block w-100" style="height:300px" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Blog_Image_3.jpg" class="d-block w-100" style="height:300px" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> 
+        <!--Carousel Slider End--> 
+    </header>
+    <!--Header End-->
+
+    <div class="container-fluid">
+        <div class="row ">
+            <!-- to get the space form left and right -->
+            <div class="col-xl-10 col-lg-10 col-md-12 col-11 mx-auto my-5">
+                <div class="row gx-5 mx-sm-auto">
+                    <!-- left side of the blog  -->
+                        <!-- left side of the blog  -->
+                        <div class="col-lg-8 col-md-11 col-11 mx-auto">
+                            <div class="row gy-5 ">
+                        <!--blog part start hers-->
+                            <div id="main">
+                                <div class="adevetise_img bg-light shadow" id="blogDiv" style="display: block;">
+                                    <p><Span style="text-decoration: underline;">#</Span>Blog content goes here.Choose "Add blog" tab to post the article </p>
+                                </div>
+                            </div>
+                            <!--blog end-->
+                            </div>
+                        </div>
+                    <!--Left side End-->
+                    <!--Right Panel start's here-->
+                    <div class="col-lg-3 col-md-7 col-11  justify-content-end m-lg-0 m-auto">
+                        <div class="row gy-5 left_div__blog">
+                            <!-- about me -->
+                            <!--<div class="col-12  about_me_div shadow">
+                                <p>Manikandan Natarajan</p>
+                                <p>I, learning the Full stack- Mean Developer. I have a fashion and a interest of creating company blog. I want to provide my experience with you.</p>
+                            </div>-->
+                            <!-- popular post -->
+                            <div class=" popular_post ">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Popular Posts</h2>
+                                </div>
+                                <div class="right_sub__div shadow">
+                                    <div class="row ">
+                                        <!-- <div class="col-3  popular_post__img1 py-2 pl-2">
+                                        </div> -->
+                                        <div class="col-9">
+                                            <h5>Road to 2023</h5>
+                                            <p class="text-capitalize"><a href ="https://www.socialsamosa.com/2023/01/road-to-2023-social-media-will-shape-up/">AI, social commerce & regional content</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <!-- <div class="col-3  popular_post__img2 py-2 pl-2">
+                                        </div> -->
+                                        <div class="col-9">
+                                            <h5>Trends</h5>
+                                            <p class="text-capitalize"><a href ="https://www.socialsamosa.com/2023/01/blogging-trends-2023/">Blogging trends to look out for</a></p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- advertise -->
+                            <div class=" right_div_post">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Advertise</h2>
+                                </div>
+                                <div class="right_sub__div ">
+                                    <div class="adevetise_img bg-light shadow">
+                                        <p>Ads goes here</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tags -->
+                            <div class=" right_div_post">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Tags</h2>
+                                </div>
+                                <div class="tags_main right_sub__div">
+                                    <a href="https://youtu.be/5p8e2ZkbOFU" target="_thapa" class="badge shadow text-capitalize"> html </a>
+                                    <a href="#" class="badge shadow text-capitalize"> css </a>
+                                    <a href="#" class="badge shadow text-capitalize"> js </a>
+                                    <a href="#" class="badge shadow text-capitalize"> Bootstrap </a>
+                                </div>
+                            </div>
+                            <!-- Inspiration -->
+                            <div class=" right_div_post">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Inspiration</h2>
+                                </div>
+                                <div class="right_sub__div">
+                                    <div class="row gx-3">
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://images.pexels.com/photos/34140/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://images.pexels.com/photos/38547/office-freelancer-computer-business-38547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                        <div class="col-6">
+                                            <figure>
+                                                <img src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-fluid shadow">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Follow Me -->
+                            <!-- <div class=" right_div_post">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Follow Me</h2>
+                                </div>
+                                <div class="right_sub__div d-flex justify-content-around">
+                                    <a href="#"> <i class="fab fa-facebook-square fa-3x"></i></a>
+                                    <a href="#" target="_thapa"> <i class="fab fa-3x fa-instagram"></i></a>
+                                    <a href="#"> <i class="fab fa-3x fa-github-square"></i> </a>
+                                    <a href="#"> <i class="fab fa-3x fa-twitter-square"></i></a>
+                                    <a href="#"> <i class="fab fa-3x fa-youtube-square"></i> </a>
+                                    <a href="#"> <i class="fab fa-3x fa-linkedin"></i></a>
+                                </div>
+                            </div> -->
+                            <!-- Subscribe -->
+                            <div class=" right_div_post">
+                                <div class="right_div__title py-4 pl-2 ">
+                                    <h2>Subscribe</h2>
+                                </div>
+                                <div class="right_sub__div">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Enter your e-mail below and get notified on the latest blog posts.</label>
+                                            <input type="email" class="form-control mt-2" id="exampleFormControlInput1" placeholder="name@example.com">
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="subs_btn d-block" type="submit">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Right Panel End-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer start's-->
+    <footer>
+        <p class="text-center py-5 bg-light">@2023 Blogwebsite.All rights reserved</p>
+    </footer>
+    <!--Footer End-->
+    <script src = "/js/getData.js"></script>
+    <!-- 🚨 Our custom JavaScript  -->
+    <script src="/js/index.js"></script>
+    <script type="text/javascript">
+        const like = document.getElementById('like_btn');
+        const singleClick = () => {
+            like.style.fontWeight = 'bold';
+            like.style.background = '#bbe1fa';
+            like.style.color = '#1b262c';
+            like.innerHTML = "✓ Liked";
+        }
+        const doubleClick = () => {
+            like.style.fontWeight = 'normal';
+            like.style.background = '#3282b8';
+            like.style.color = '#fff';
+            like.innerHTML = "Like";
+        }
+        var clickCount = 0;
+        like.addEventListener('click', function() {
+            clickCount++;
+            if (clickCount === 1) {
+                singleClickTimer = setTimeout(function() {
+                    clickCount = 0;
+                    singleClick();
+                }, 400);
+            } else if (clickCount === 2) {
+                clearTimeout(singleClickTimer);
+                clickCount = 0;
+                doubleClick();
+            }
+        }, false);
+        // show and hide the replies
+        const reply = (rep) => {
+            console.log('hi');
+            // debugger;
+            var res = document.getElementById(rep);
+            console.log(res);
+            if (res.className == "replies") {
+                res.className = "thapa_show";
+                res.style.WebkitTransition = 'all 0.3s ease';
+                // res.style.transition = 'all 0.3s ease';
+                // console.log(thapa_show);
+            } else if (res.className == 'thapa_show') {
+                // res.className = " ";
+                console.log('thapa show');
+                res.className = "replies";
+            }
+        }
+        </script>
+  </body>
+</html>
